@@ -1,9 +1,7 @@
 main:
   - title: "Engineering"
     url: /engineering/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
+  - title: "Art"
+    url: /art/
   - title: "About"
     url: /about/

@@ -7,4 +7,4 @@ permalink: /engineering/
 
 top level eng page
 
-[title](https://www.graysongalisky.com/engineering/depth_v1)
+[Depth V1](https://www.graysongalisky.com/engineering/depth_v1)
