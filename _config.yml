@@ -23,6 +23,7 @@ twitter_username: username
 github_username: ggalisky
 minimal_mistakes_skin: default
 search: true
+url: "https://www.graysongalisky.com"
 
 # Build settings
 markdown: kramdown
@@ -36,6 +37,7 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 include:
   - _pages
   - _engineering
+  - _art
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
