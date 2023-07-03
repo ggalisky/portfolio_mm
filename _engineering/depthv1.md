@@ -58,6 +58,9 @@ It took a bit more research, but we were able to come up with a parts list and s
 ![depth high level EE](/assets/images/d3pth_ee_sch.png)
 
 
+:-------------------------:|:-------------------------:
+![](/assets/images/d3pth_pcb_front.png)  |  ![](/assets/images/d3pth_pcb_back.png)
+
 3. explain how we tackled the problem
 4. show results
 5. explain room for improvement, link to Depth V2
