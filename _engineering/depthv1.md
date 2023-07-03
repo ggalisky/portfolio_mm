@@ -5,25 +5,72 @@ layout: splash
 ---
 
 <h1 style="text-align: center;">Depth V1 - MakeMIT 2021 2nd Place Project  </h1>
-<h2 style="text-align: center;">I Led a Team to Design And Build A Freediving Smart Watch That Won 2nd Place at MakeMIT2021. We did it in 16 days, here is how.  </h2>
+<h2 style="text-align: center;">I Led a Team to Design And Build A Freediving Smart Watch That Won 2nd Place at MakeMIT 2021. We did it in 16 days, here is how:  </h2>
+## Context
+[Freediving](https://en.wikipedia.org/wiki/Freediving) - the sport or activity of diving underwater without the use of breathing apparatus, especially in deep water.
 
-1. establish what freediving is
-2. establish why a freediving watch matters
+Why do you need a freediving computer? 
+- Keep track of surface interval to prevent shallow water blackouts
+- Stay informed about your depth, dive speed, dive time, and other metrics
+- Log dives for future review + training
+
+
+## What is D3PTH?
+D3PTH is a freediving smart watch/computer that a friend and I built as part of [MakeMIT link](https://www.devpost.com/software/d3pth). We built D3PTH because we though it would be a difficult/fun but doable embedded hardware/software project within the constraints of the MakeMIT hackathon. Those constraints were a 16 day build + demo window and a $500 budget. After being accepted into MakeMIT, we got to work on a plan.
+
+My role on the team was project lead. I worked on the electronics, mechanical engineering, firmware, and physical prototyping (3D printing, soldering etc).
+
+### Timeline 
+
+![image](/assets/images/d3pth_timeline.png)
+
+### Design Phase
+
+We identified early on that there were three elements of the design we need to get right to be successful. 
+1. Electronics
+2. Mechanical casing (pressure vessel)
+3. Firmware
+
+#### Electronics
+
+Since our time line was tight, we started working on the electronics first. While we could afford to iterate on the firmware and mechanical casing daily, getting a PCB made and shipped takes 5-10 days. Once the electronics were designed and ordered we could then reallocate our time to iterating on the firmware and mechanical casing.
+
+Our first step was creating a rough set of requirements. We landed on the following:
+
+- Color screen
+- IMU based user interface (no buttons)
+- ESP32 MCU (we had experience with this MCU)
+- Wireless Charging (no propriety charing dock)
+- Haptic feedback for in dive depth monitoring
+- Dive logging 
+- Wireless dive log export over bluetooth
+
+We then created a basic high level electronics schematic: 
+
+![depth high level EE](/assets/images/d3pth_ee_highlvl.png)
+
+After some googling we found our screen: [GC9A01 Driven 240 x 240 circular display](https://www.makerfabs.com/desfile/files/ER-TFTM1.28-1_Datasheet.pdf)
+
+It took a bit more research, but we were able to come up with a parts list and started working on the schematic. After the schematic was done, we moved on to PCB design and designed the shape of the PCB to fit the diameter of the screen we selected. The dimensions of the mechanical casing would also be derived from the screen + PCBA.
+
+![depth high level EE](/assets/images/d3pth_ee_parts_table.png)
+
+![depth high level EE](/assets/images/d3pth_ee_sch.png)
+
+
 3. explain how we tackled the problem
 4. show results
-5. explain room for improvement, linke to Depth V2
+5. explain room for improvement, link to Depth V2
 
 
 
-MakeMIT link: devpost.com/software/d3pth 
+ 
 
-Why would someone use a freediving smart watch?
 
-The ability to know how deep you are diving and for how long can be critical to make safe diving decisions. D3PTH provides that information and more. In addition, a freediving smart watch can log your dive sessions for review later.
 
-What is freediving?
-Free diving is underwater diving that depends on performing an entire dive on a single breath.
-Freediving is different from scuba because it does not utilize a scuba breathing apparatus.
+
+
+
 Why build D3PTH?
 No free diving watch under $500 has a color display, wireless charging, and wireless dive log export. In addition, our team wanted a project that had mechanical, electrical, and software challenges.
 D3PTH will be built with a 3D printed plastic body, a glass watch face, and a stretchy watch band to fit over a wetsuit. D3PTH will feature a custom 4 layer PCB. The D3PTH PCB will feature an ESP32, BNO05 IMU, Lipo battery management circuitry, wireless charging circuitry, wifi and bluetooth connectivity, and a haptics system.
