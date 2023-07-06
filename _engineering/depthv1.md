@@ -4,7 +4,7 @@ permalink: /engineering/depthv1
 layout: splash
 ---
 
-<h1 style="text-align: center;">Depth V1 - MakeMIT 2021 2nd Place Project  </h1>
+<h1 style="text-align: center;">D3PTH - Design And Build of A Freediving Smart Watch </h1>
 <h2 style="text-align: center;">I Led a Team to Design And Build A Freediving Smart Watch That Won 2nd Place at MakeMIT 2021. We did it in 16 days, here is how:  </h2>
 ## Context
 [Freediving](https://en.wikipedia.org/wiki/Freediving) - the sport or activity of diving underwater without the use of breathing apparatus, especially in deep water.
@@ -14,6 +14,7 @@ Why do you need a freediving computer?
 - Stay informed about your depth, dive speed, dive time, and other metrics
 - Log dives for future review + training
 
+This project took place March 2021
 
 ## What is D3PTH?
 D3PTH is a freediving smart watch/computer that a friend and I built as part of [MakeMIT link](https://www.devpost.com/software/d3pth). We built D3PTH because we though it would be a difficult/fun but doable embedded hardware/software project within the constraints of the MakeMIT hackathon. Those constraints were a 16 day build + demo window and a $500 budget. After being accepted into MakeMIT, we got to work on a plan.
@@ -28,7 +29,7 @@ My role on the team was project lead. I worked on the electronics, mechanical en
 
 We identified early on that there were three elements of the design we need to get right to be successful. 
 1. Electronics
-2. Mechanical casing (pressure vessel)
+2. Mechanical Design (pressure vessel)
 3. Firmware
 
 #### Electronics
@@ -58,8 +59,10 @@ It took a bit more research, but we were able to come up with a parts list and s
 ![depth high level EE](/assets/images/d3pth_ee_sch.png)
 
 
-:-------------------------:|:-------------------------:
-![](/assets/images/d3pth_pcb_front.png)  |  ![](/assets/images/d3pth_pcb_back.png)
+
+![](/assets/images/d3pth_pcb_render.png)  |  ![](/assets/images/d3pth_oven.png)
+
+### Mechanical Design
 
 3. explain how we tackled the problem
 4. show results
