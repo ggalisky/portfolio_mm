@@ -34,7 +34,7 @@ We identified early on that there were three elements of the design we need to g
 
 #### Electronics
 
-Since our time line was tight, we started working on the electronics first. While we could afford to iterate on the firmware and mechanical casing daily, getting a PCB made and shipped takes 5-10 days. Once the electronics were designed and ordered we could then reallocate our time to iterating on the firmware and mechanical casing.
+Since our time line was tight, we started working on the electronics first. While we could afford to iterate on the firmware and mechanical design daily, getting a PCB made and shipped takes 5-10 days. Once the electronics were designed and ordered we could then reallocate our time to iterating on the firmware and mechanical design.
 
 Our first step was creating a rough set of requirements. We landed on the following:
 
@@ -52,7 +52,7 @@ We then created a basic high level electronics schematic:
 
 After some googling we found our screen: [GC9A01 Driven 240 x 240 circular display](https://www.makerfabs.com/desfile/files/ER-TFTM1.28-1_Datasheet.pdf)
 
-It took a bit more research, but we were able to come up with a parts list and started working on the schematic. After the schematic was done, we moved on to PCB design and designed the shape of the PCB to fit the diameter of the screen we selected. The dimensions of the mechanical casing would also be derived from the screen + PCBA.
+It took a bit more research, but we were able to come up with a parts list and started working on the schematic. After the schematic was done, we moved on to PCB design and designed the shape of the PCB to fit the diameter of the screen we selected. The dimensions of the mechanical design would also be derived from the screen + PCBA.
 
 ![depth high level EE](/assets/images/d3pth_ee_parts_table.png)
 
@@ -63,6 +63,8 @@ It took a bit more research, but we were able to come up with a parts list and s
 ![](/assets/images/d3pth_pcb_render.png)  |  ![](/assets/images/d3pth_oven.png)
 
 ### Mechanical Design
+
+Now that our electronics had been designed and we'd placed an order for the parts and the PCB I moved on to the mechanical design while the rest of my team 
 
 3. explain how we tackled the problem
 4. show results
