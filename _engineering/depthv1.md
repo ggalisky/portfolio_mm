@@ -58,13 +58,33 @@ It took a bit more research, but we were able to come up with a parts list and s
 
 ![depth high level EE](/assets/images/d3pth_ee_sch.png)
 
-
-
 ![](/assets/images/d3pth_pcb_render.png)  |  ![](/assets/images/d3pth_oven.png)
 
 ### Mechanical Design
 
-Now that our electronics had been designed and we'd placed an order for the parts and the PCB I moved on to the mechanical design while the rest of my team 
+Now that our electronics had been designed and we'd placed an order for the parts and the PCB I moved on to the mechanical design. The casing had one main requirement: don't let water in up to 50ft. From there I worked out that SLA 3D printed parts are watertight. Now that I knew I could 3D print the casing I started designing based on the dimensions of the PCB, dimensions of standard o-rings, and standard flat glass disks. This was the result after a few hours in Solidworks:
+
+
+![](/assets/images/depth_meche_exploded.png)  
+
+![](/assets/images/depth_meche_cross_section.png)
+
+![](/assets/images/depth_3D_print.png)|![](/assets/images/depth_meche_v2.png)
+
+On the left is the V1 casing and on the right is V2. A design iteration was required because the bezel clamping the glass down onto the o-ring was not rigid enough to create a proper seal. As a result of this I increased the thickness of the bezel and added additional mounting points. 
+
+### Firmware
+
+While we waited for our electronics to be manufactured and casing to be 3D printed we started on the firmware. We tried to keep things as basic as possible in order to ensure we would be able to deliver a functional demo. We narrowed down our feature list to:
+
+- Display relevant information (depth, water temperature, surface interval, heading)
+- sample pressure at 2hz
+- haptic feedback for reaching a preprogrammed target depth
+
+We skipped working on a sleep mode or charging mode as those features weren't necessary for the demo. We implemented our code in C++ with the Arduino frame work through Platform.io. The code runs in a super loop:
+
+![](/assets/images/d3pth_fw.png)
+
 
 3. explain how we tackled the problem
 4. show results
