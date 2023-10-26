@@ -4,22 +4,21 @@ permalink: /engineering/depthv1
 layout: splash
 ---
 
-<h1 style="text-align: center;">D3PTH - Design And Build of A Freediving Smart Watch </h1>
+<h1 style="text-align: center;">D3PTH - Design And Build of A Freediving Smart Watch</h1>
 <h2 style="text-align: center;">I Led a Team to Design And Build A Freediving Smart Watch That Won 2nd Place at MakeMIT 2021. We did it in 16 days, here is how:  </h2>
-## Context
+<h10 style="text-align: left;">March 2021  </h10>
+
 [Freediving](https://en.wikipedia.org/wiki/Freediving) - the sport or activity of diving underwater without the use of breathing apparatus, especially in deep water.
-
-Why do you need a freediving computer? 
-- Keep track of surface interval to prevent shallow water blackouts
-- Stay informed about your depth, dive speed, dive time, and other metrics
-- Log dives for future review + training
-
-This project took place March 2021
 
 ## What is D3PTH?
 D3PTH is a freediving smart watch/computer that a friend and I built as part of [MakeMIT link](https://www.devpost.com/software/d3pth). We built D3PTH because we though it would be a difficult/fun but doable embedded hardware/software project within the constraints of the MakeMIT hackathon. Those constraints were a 16 day build + demo window and a $500 budget. After being accepted into MakeMIT, we got to work on a plan.
 
 My role on the team was project lead. I worked on the electronics, mechanical engineering, firmware, and physical prototyping (3D printing, soldering etc).
+
+Why do you need a freediving computer? 
+- Keep track of surface interval to prevent shallow water blackouts
+- Stay informed about your depth, dive speed, dive time, and other metrics
+- Log dives for future review + training
 
 ### Timeline 
 

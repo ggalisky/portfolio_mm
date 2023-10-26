@@ -21,7 +21,7 @@ art_row:
     btn_class: "btn--inverse"
 
 about_row:
-  - image_path: /assets/images/grayson_mexico_selfie.png
+  - image_path: /assets/images/zero_g_mexico.JPEG
     url: "/about/"
     title: "About me"
     btn_label: "Learn more"
