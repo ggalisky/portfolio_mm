@@ -10,9 +10,10 @@ layout: splash
 [Freediving](https://en.wikipedia.org/wiki/Freediving) - the sport or activity of diving underwater without the use of breathing apparatus, especially in deep water.
 
 ## What is Depthv2?
-Depth V2 is the second, third, fourth, and fifth iterations of the Depth V1 freediving computer. Depth V2 differs in almost every area include hardware, firmware, test tools, and a mobile app. On this page I'll go over my work on Depth V2. Depth V2 is available for purchase here: [Depth V2](https://www.https://www.depthdiving.com)
+Depth V2 is an audio freediving computer and music player designed for the underwater adventurer. Users can set configurable dive notifications, listen to their favorite music, and record their dives. It is the second iteration of the [Depth V1 dive computer](/engineering/depthv1)
+, and it is available for purchase here: [Depth V2](https://www.https://www.depthdiving.com)
 
-Depth was developed by myself and my Cofounder Fran (INSERT LINK TO FRAN). I designed and built the casing, electronics, firmware, python test tools, pressure testing tools, and assembly jigs. Fran developed the mobile app.
+Depth was developed by myself and my Cofounder Fran (INSERT LINK TO FRAN). I designed and built the casing, electronics, firmware, python test tools, pressure testing chamber, and assembly jigs. Fran developed the mobile app.
 
 Why do you need a freediving computer? 
 - Keep track of surface interval to prevent shallow water blackouts
@@ -24,27 +25,25 @@ What makes Depth novel?
 - Fully wireless (Data transfer over Bluetooth, charging is wireless on Qi charging pads)
 - Head mounted 
 
-### Timeline 
-
 ![image](/assets/images/depth_timeline.png)
-
-### Design Phase
-
-We identified early on that there were three elements of the design we need to get right to be successful. 
-1. Electronics
-2. Mechanical Design (pressure vessel)
-3. Firmware
 
 ### Firmware
 
-Writting firmware for Depth V2 has by far been the biggest area of work outside of manual assembly work. The feature set on Depth V2 is much larger than Depth V1. 
+The firmware for Depth V2 is as a state machine with 4 major states: Sleep, Dive, Music Player, and Bluetooth:
 
-The features include: 
+![image](/assets/images/depth_fw_state_machine.png)
+
+Depth V2's firmware has many new features when compared to Depth V1 including:
+
+- Over the air firmware updates via Bluetooth Low Energy from a laptop or mobile device (IOS or Android)
+- Several configurable in dive notifications for depth, time and velocity
+- A music player
+- 2hz, 4hz, and 8hz dive logging
+- tap detection for skipping songs or triggering a notification
+- Lower power consumption in sleep mode and dive mode
+- and much more
 
 
-TODO THIS IS AS FAR AS I GOT
-
-While we waited for our electronics to be manufactured and casing to be 3D printed we started on the firmware. We tried to keep things as basic as possible in order to ensure we would be able to deliver a functional demo. We narrowed down our feature list to:
 
 - Display relevant information (depth, water temperature, surface interval, heading)
 - sample pressure at 2hz
@@ -54,6 +53,9 @@ We skipped working on a sleep mode or charging mode as those features weren't ne
 
 ![](/assets/images/d3pth_fw.png)
 
+### High Level Software Overview
+
+![image](/assets/images/depth_sw_arch.png)
 
 #### Electronics
 

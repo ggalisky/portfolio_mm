@@ -14,7 +14,7 @@ depthv1_row:
     btn_class: "btn--inverse"
 
 depthv2_row:
-  - image_path: /assets/images/bull_kelp_bottom_POV.JPG
+  - image_path: /assets/images/depthV2_model_shot.png
     url: "/engineering/depthv2/"
     title: "Depth Freediving Computer - V2"
     excerpt: 'TODO'
@@ -59,9 +59,9 @@ filament_ext_row:
 
 <br> 
 
-{% include feature_row id="depthv1_row" type="left" %}
-
 {% include feature_row id="depthv2_row" type="left" %}
+
+{% include feature_row id="depthv1_row" type="left" %}
 
 {% include feature_row id="inverted_pen_row" type="left" %}
 
@@ -71,23 +71,3 @@ filament_ext_row:
 
 {% include feature_row id="filament_ext_row" type="left" %}
 
-
-
-
-
-
-top level eng page
-
-[Depth V1](/engineering/depthv1)
-
-[Depth V2](/engineering/depthv2)
-
-[Inverted Pendulum With Reaction Wheel End Effector](/engineering/inverted-pendulum)
-
-[Industrial High Temperature 3D Printer](/engineering/hightemp3dp)
-
-[Exoromper](/engineering/exoromper)
-
-[Biomimetic Robotic Hand](/engineering/biomphand)
-
-[DIY Filament Extrusion](DIY Filament Extrusion)

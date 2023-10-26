@@ -9,7 +9,7 @@ My engineering interests are broad, and as a result of this I tend to select pro
 
 Professionally I've worked on hardware and software for satellites, dive computers, hardware in the loop testers, and industrial 3D printers.
 
-I currently work at Zoox as a hardware software integration engineer on the hardware in the loop test platform development team, and at Depth Dive Computers designing and building the next generation of freediving computers
+I currently work at Zoox on vehicle simulation platforms, and at Depth Dive Computers designing and building the next generation of freediving computers
 
 [Engineering Projects](https://link-url-here.org)
 

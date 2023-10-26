@@ -8,7 +8,7 @@ eng_row:
   - image_path: /assets/images/d_orig.jpg
     url: "/engineering/"
     title: "Engineering Projects"
-    excerpt: "I've worked on hardware and software for projects ranging from dive computers to spacecraft."
+    excerpt: "I've worked on hardware and software projects ranging from dive computers to spacecraft."
     btn_label: "Learn More"
     btn_class: "btn--inverse"
 
@@ -24,6 +24,7 @@ about_row:
   - image_path: /assets/images/zero_g_mexico.JPEG
     url: "/about/"
     title: "About me"
+    excerpt: 'Learn more about my background and passions'
     btn_label: "Learn more"
     btn_class: "btn--inverse"
 ---
