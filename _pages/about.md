@@ -11,6 +11,8 @@ Professionally I've worked on hardware and software for satellites, dive compute
 
 I currently work at Zoox on vehicle simulation platforms, and at Depth Dive Computers designing and building the next generation of freediving computers
 
+I studied electrical engineering at California State University Long Beach where I received my Bachelors of Science in Electrical Engineering
+
 [Engineering Projects](https://link-url-here.org)
 
 [Photography](https://link-url-here.org)
