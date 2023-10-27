@@ -11,7 +11,7 @@ layout: splash
 [Freediving](https://en.wikipedia.org/wiki/Freediving) - the sport or activity of diving underwater without the use of breathing apparatus, especially in deep water.
 
 ## What is D3PTH?
-D3PTH is a freediving smart watch/computer that a friend and I built as part of [MakeMIT link](https://www.devpost.com/software/d3pth). We built D3PTH because we though it would be a difficult/fun but doable embedded hardware/software project within the constraints of the MakeMIT hackathon. Those constraints were a 16 day build + demo window and a $500 budget. After being accepted into MakeMIT, we got to work on a plan.
+D3PTH is a freediving smart watch/computer that a friend and I built as part of [MakeMIT link](https://www.devpost.com/software/d3pth). We built D3PTH because we though it would be a fun and challenging embedded systems project within the constraints of the MakeMIT hackathon. The constraints were a 16 day build + demo window and a $500 budget. After being accepted into MakeMIT, we got to work on a plan.
 
 My role on the team was project lead. I worked on the electronics, mechanical engineering, firmware, and physical prototyping (3D printing, soldering etc).
 
@@ -33,9 +33,9 @@ We identified early on that there were three elements of the design we need to g
 
 #### Electronics
 
-Since our time line was tight, we started working on the electronics first. While we could afford to iterate on the firmware and mechanical design daily, getting a PCB made and shipped takes 5-10 days. Once the electronics were designed and ordered we could then reallocate our time to iterating on the firmware and mechanical design.
+Since our time line was tight, we started working on the electronics first. While we could afford to iterate on the firmware and mechanical design daily, getting a PCB made and shipped takes 5-10 days. The 5-10 day lead time for the electronics meant we only had one shot to get it right. Once the electronics were designed and ordered we could then reallocate our time to iterating on the firmware and mechanical design.
 
-Our first step was creating a rough set of requirements. We landed on the following:
+Our first step was creating a rough set of requirements for the electronics. We landed on the following:
 
 - Color screen
 - IMU based user interface (no buttons)
@@ -47,21 +47,34 @@ Our first step was creating a rough set of requirements. We landed on the follow
 
 We then created a basic high level electronics schematic: 
 
-![depth high level EE](/assets/images/d3pth_ee_highlvl.png)
+![depth high level EE](/assets/images/d3pth_ee_highlvl.png){: width="1000" }
 
 After some googling we found our screen: [GC9A01 Driven 240 x 240 circular display](https://www.makerfabs.com/desfile/files/ER-TFTM1.28-1_Datasheet.pdf)
 
 It took a bit more research, but we were able to come up with a parts list and started working on the schematic. After the schematic was done, we moved on to PCB design and designed the shape of the PCB to fit the diameter of the screen we selected. The dimensions of the mechanical design would also be derived from the screen + PCBA.
 
+
 ![depth high level EE](/assets/images/d3pth_ee_parts_table.png)
 
 ![depth high level EE](/assets/images/d3pth_ee_sch.png)
 
-![](/assets/images/d3pth_pcb_render.png)  |  ![](/assets/images/d3pth_oven.png)
+Our PCBA process roughly followed these steps:
+
+- PCB outline was created first in the Solidworks assembly to ensure the PCB would fit in the housing 
+- Rough component placement sketch made in Solidworks showed I had to switch from 0602 size resistors and capacitors to 0402
+- 4 layer from top to bottom: signal, ground plane, signal and 3.3V, signal
+- Antenna placed on edge of board as per data sheet recommendations. Vibration motor placement adjacent to antenna is not ideal, but did not interfere significantly with bluetooth connection.
+- Mistakes with missing traces and SD card slot rectified with 28AWG jumper wire
+- Utilized a SMT stencil, and toaster oven to create solder joints
+- Initial testing showed power draw during dive mode is 60mA, battery size is 400mA, max operating time is 6.5hrs.
+
+![](/assets/images/d3pth_pcb_render.png){: width="500" }  |  ![](/assets/images/d3pth_oven.png){: width="500" }
+
+![](/assets/images/depthv1_IRL_pcba.png){: width="1000" }
 
 ### Mechanical Design
 
-Now that our electronics had been designed and we'd placed an order for the parts and the PCB I moved on to the mechanical design. The casing had one main requirement: don't let water in up to 50ft. From there I worked out that SLA 3D printed parts are watertight. Now that I knew I could 3D print the casing I started designing based on the dimensions of the PCB, dimensions of standard o-rings, and standard flat glass disks. This was the result after a few hours in Solidworks:
+Now that our electronics had been designed and ordered, I moved on to the mechanical design. The casing had a few key requirements. It had to be water proof to 50ft, had to have a place for the wrist strap to attach, and had to have a glass side for viewing the screen. Based on the those requirements I chose to use SLA 3D printed parts because they are watertight without post processing. After a couple hours in Solidworks I had the first iteration done: 
 
 
 ![](/assets/images/depth_meche_exploded.png)  
@@ -80,50 +93,35 @@ While we waited for our electronics to be manufactured and casing to be 3D print
 - sample pressure at 2hz
 - haptic feedback for reaching a preprogrammed target depth
 
-We skipped working on a sleep mode or charging mode as those features weren't necessary for the demo. We implemented our code in C++ with the Arduino frame work through Platform.io. The code runs in a super loop:
+We skipped working on a sleep mode or charging mode as those features weren't necessary for the demo. We implemented our code in C++ with the Arduino frame work through [Platform.io](https://platformio.org/). The code runs in a super loop:
 
-![](/assets/images/d3pth_fw.png)
+![](/assets/images/d3pth_fw.png){: width="500" }
 
-
-3. explain how we tackled the problem
-4. show results
-5. explain room for improvement, link to Depth V2
+![](/assets/images/depthv1_firmware_screens.png){: width="500" }
 
 
+### Lessons learned
 
- 
+Integrating the mechanical, electrical and software components of the project turned out to be a challenge, and we worked until the last minute to get our demo ready. Some of the key challenges we faced were: 
+- Space constrained PCBA's are psychically difficult to work on and test due to small size
+- Some of the foot prints we used on the schematic were wrong an dded to be double checked
+- The supply of some IC's was low and we had to desolder IC's from evaluation boards to get the parts we needed.
+
+Lessons learned:
+- Utilize a checklist when reviewing PCB for errors prior to sending design files to manufacturer
+- Use remote serial to UART programmer instead of including a serial to UART IC on space constrained designs
+- Use SPI flash IC’s instead of SD on space constrained designs
+- Have the PCB assembled by a robot if the budget allows
+- Always use connectors, avoid solder pads for frequently disconnected wires
+- When designing an o-ring groove, design the groove for an o-ring under compression vs an uncompressed o-ring
+- Switching away from the Arduino IDE to Visual Studio + Arduino extension 
+- Don’t desolder IC’s from an evaluation board to compensate for the global chip shortage. Find a new IC
+
+![test](/assets/images/depthv1_lessons.png){: width="500" }
 
 
+## Results
 
+In the end we were able to present a demo of our project and [won 2nd place!](https://devpost.com/software/d3pth) We were proud of our effort over the ~ 2 weeks allotted for the hackathon. I've continued this project and you can check out the [V2 version here](/engineering/depthv2/)
+![](/assets/images/depthv1_on_arm.png){: width="500" }
 
-
-
-Why build D3PTH?
-No free diving watch under $500 has a color display, wireless charging, and wireless dive log export. In addition, our team wanted a project that had mechanical, electrical, and software challenges.
-D3PTH will be built with a 3D printed plastic body, a glass watch face, and a stretchy watch band to fit over a wetsuit. D3PTH will feature a custom 4 layer PCB. The D3PTH PCB will feature an ESP32, BNO05 IMU, Lipo battery management circuitry, wireless charging circuitry, wifi and bluetooth connectivity, and a haptics system.
-Key Features: Full color 240X240 pixel circular screen Buttonless IMU based user interface ESP32 Pico Microcontroller Wireless Charging Underwater compass mode utilizing the Bosch IMU Haptic feedback for in dive depth monitoring Dive logging including dive time, depth, temperature and compass headings Wireless dive log export over bluetooth
-How we built it
-We used a form 3 SLA 3D printer to make the housing, and used heat set inserts to give us a place to screw down the bezel to seal against water.
-We had our 4 layer PCB and SMT stencil fabricated with JLC PCB. After receiving the PCB's we hand placed the components and baked the PCB in a cheap toaster oven.
-For the programming we used the Arduino IDE due to the number of plug and play libraries available
-
-Challenges we ran into
-
-Many, many challenges. We had lots of hardware issues with our PCB due to component spacing being so tight. Once the PCB was working we had a pretty stable system.
-
-Accomplishments that we're proud of
-
-We are super proud that it works! We had our doubts that we could design and build a 3D printed waterproof smart watch in 16 days. We programmed our board on a test-bench while it was in transit to maximize our time.
-
-What we learned
-How to integrate the ESP32 D4 Pico into a circuit board
-How to design a Bluetooth antenna circuit
-Limitations of resin printing
-Importance of having a backup PCB if the main one fails
-What's next for D3PTH
-​
-We plan on building D3PTH with even more features and a more durable CNC'd metal case. New features we are looking to include:
-Flexible PCB's for cable management
-A SPo2 sensor
-GPS
-A second IMU for improved headings
