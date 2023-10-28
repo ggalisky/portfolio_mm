@@ -13,7 +13,7 @@ big_sur_row:
 
 monterey_row:
   - image_path: /assets/art_images/Monastery/GOPR1602 copy.JPG
-    url: "/art/photography/Monastery/"
+    url: "/art/photography/monterey/"
     title: "Monterey, California"
     excerpt: "100 miles south of Silicon valley, Monterey is home to spectacular kelp forests and cold water."
     btn_label: "Learn More"
@@ -27,27 +27,27 @@ yucatan_row:
     btn_label: "Learn More"
     btn_class: "btn--inverse"
 
-Yosemite_row:
-  - image_path: /assets/
-    url: "/art/photography/ /"
-    title: ""
-    excerpt: "1"
+yosemite_row:
+  - image_path: /assets/art_images/yosemite/IMG_0023.jpg
+    url: "/art/photography/yosemite/"
+    title: "Yosemite, California"
+    excerpt: "excerpt"
     btn_label: "Learn More"
     btn_class: "btn--inverse"
 
 washington_row:
-  - image_path: /assets/
-    url: "/art/photography/ /"
-    title: ""
-    excerpt: "1"
+  - image_path: /assets/art_images/Washington/GOPR1499 copy.JPG
+    url: "/art/photography/washington/"
+    title: "Olympic Peninsula, Washington"
+    excerpt: "excerpt"
     btn_label: "Learn More"
     btn_class: "btn--inverse"
 
-Hawaii_row:
-  - image_path: /assets/
-    url: "/art/photography/ /"
-    title: ""
-    excerpt: "1"
+hawaii_row:
+  - image_path: /assets/art_images/Hawaii/A7S02940.JPG
+    url: "/art/photography/hawaii/"
+    title: "Hawaii"
+    excerpt: "excerpt"
     btn_label: "Learn More"
     btn_class: "btn--inverse"
 ---
@@ -59,6 +59,9 @@ Hawaii_row:
 
 {% include feature_row id="yucatan_row" type="left" %}
 
-{% include feature_row id="monterey_row" type="left" %}
-{% include feature_row id="monterey_row" type="left" %}
-{% include feature_row id="monterey_row" type="left" %}
+{% include feature_row id="hawaii_row" type="left" %}
+
+{% include feature_row id="washington_row" type="left" %}
+
+{% include feature_row id="yosemite_row" type="left" %}
+

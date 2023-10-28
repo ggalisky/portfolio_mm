@@ -5,7 +5,7 @@ title: home
 order: 1
 
 eng_row:
-  - image_path: /assets/images/d_orig.jpg
+  - image_path: /assets/images/biohand.png
     url: "/engineering/"
     title: "Engineering Projects"
     excerpt: "I've worked on hardware and software projects ranging from dive computers to spacecraft."
