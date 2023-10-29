@@ -1,6 +1,6 @@
 ---
 title: "Yucatan Peninsula"
-permalink: /art/photography/yucatan_peninsula
+permalink: /art/photography/yucatan_peninsula/
 layout: splash
 ---
 

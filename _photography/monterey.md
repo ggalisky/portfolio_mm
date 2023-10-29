@@ -1,6 +1,6 @@
 ---
 title: "Monterey"
-permalink: /art/photography/monterey
+permalink: /art/photography/monterey/
 layout: splash
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Hawaii"
-permalink: /art/photography/hawaii
+permalink: /art/photography/hawaii/
 layout: splash
 ---
 
