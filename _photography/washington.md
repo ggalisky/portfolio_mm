@@ -1,6 +1,6 @@
 ---
 title: "Washington"
-permalink: /art/photography/washington/
+permalink: /art/photography/washington
 layout: splash
 ---
 

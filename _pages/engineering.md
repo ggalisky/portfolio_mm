@@ -31,7 +31,7 @@ inverted_pen_row:
 
 BFP_row:
   - image_path: /assets/images/bfp_front.png
-    url: "/engineering/hightemp3dp/"
+    url: "/engineering/hightemp3dp"
     title: "Industrial High Temperature 3D Printer"
     excerpt: "I designed, machined, and assembled a huge custom high temperature 3D printer"
     btn_label: "Learn more"
@@ -39,7 +39,7 @@ BFP_row:
 
 biohand_row:
   - image_path: /assets/images/biohand.png
-    url: "/engineering/biomphand/"
+    url: "/engineering/biomphand"
     title: "Biomimetic Robotic Hand"
     excerpt: "I designed A 3D printed biomimetic robotic hand that received 1st place in the 2017 Stratasys Extreme Redesign Competition"
     btn_label: "Learn more"
@@ -47,7 +47,7 @@ biohand_row:
 
 filament_ext_row:
   - image_path: /assets/images/grayson_mexico_selfie.png
-    url: "/engineering/diy-filament-extrusion/"
+    url: "/engineering/diy-filament-extrusion"
     title: DIY Filament Extrusion"
     excerpt: "TODO"
     btn_label: "Learn more"
