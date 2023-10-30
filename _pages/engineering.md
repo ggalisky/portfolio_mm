@@ -7,7 +7,7 @@ permalink: /engineering/
 
 depthv1_row:
   - image_path: /assets/images/depth_meche_v2.png
-    url: "/engineering/depthv1/"
+    url: "/engineering/depthv1"
     title: "Depth Freediving Computer - V1"
     excerpt: "I led a team to design and build A freediving smart watch that won 2nd place at MakeMIT 2021"
     btn_label: "Learn More"
@@ -15,7 +15,7 @@ depthv1_row:
 
 depthv2_row:
   - image_path: /assets/images/depthV2_model_shot.png
-    url: "/engineering/depthv2/"
+    url: "/engineering/depthv2"
     title: "Depth Freediving Computer - V2"
     excerpt: 'Depth V2 is an audio freediving computer and music player designed for the underwater adventurer. Users can set configurable dive notifications, listen to their favorite music, and record their dives. It is the second iteration of the Depth V1 dive computer'
     btn_label: "Learn More"
@@ -23,7 +23,7 @@ depthv2_row:
 
 inverted_pen_row:
   - image_path: /assets/images/inv_pend.png
-    url: "/engineering/inverted-pendulum/"
+    url: "/engineering/inverted-pendulum"
     title: "Inverted Pendulum With Reaction Wheel End Effector"
     excerpt: "For my EE 471 Design of Control Systems Course my team and I built an inverted pendulum with a reaction wheel for the end effector"
     btn_label: "Learn more"
