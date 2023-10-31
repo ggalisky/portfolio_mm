@@ -3,5 +3,8 @@ main:
     url: /engineering/
   - title: "Art"
     url: /art/
+    subfolderitems:
+      - page: Photography
+        url: /art/photography
   - title: "About"
     url: /about/
