@@ -32,3 +32,5 @@ time to die" - Blade Runner
 “A great man doesn't seek to lead. He's called to it. And he answers. And if your answer is no, you'll still be the only thing I ever needed you to be. - Dune
 
 "Out of the future that is not yet, into the present that is just becoming, back to the past that no longer is." - St. Augustine's definition of time in "Helmet For My Pillow" by Robert Leckie 
+
+"A society grows great when old men plant trees whose shade they know they shall never sit in" - Greek proverb
