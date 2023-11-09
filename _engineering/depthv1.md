@@ -47,7 +47,7 @@ Our first step was creating a rough set of requirements for the electronics. We 
 
 We then created a basic high level electronics schematic: 
 
-![depth high level EE](/assets/images/d3pth_ee_highlvl.png){: width="1000" }
+![depth high level EE](/assets/images/d3pth_ee_highlvl2.png){: width="1000" }
 
 After some googling we found our screen: [GC9A01 Driven 240 x 240 circular display](https://www.makerfabs.com/desfile/files/ER-TFTM1.28-1_Datasheet.pdf)
 
