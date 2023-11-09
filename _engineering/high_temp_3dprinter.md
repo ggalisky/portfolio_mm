@@ -4,24 +4,27 @@ permalink: /engineering/hightemp3dp
 layout: splash
 ---
 
-high temp printer
+<h1 style="text-align: center;">I Designed, Machined, And Assembled a Huge Custom High-Temperature 3D Printer</h1>
+<h2 style="text-align: left;">2018 to 2021</h2>
+<br>
 
-I Designed, Machined, And Assembled A Huge Custom High Temperature 3D Printer Over The Last Year And Half
-Motivation: 
-I wanted a Fortus 450mc but they cost around $250,000 just for the printer. Materials for Stratasys printers can be around $300 per kg of ABS. Since I couldn’t afford a 450mc I built one! A big part of why I wanted a 450mc was the heated build chamber and large build area. A heated build area allows for warp free printing of ABS and PC. In addition it also allows you to print PEEK, PEI, PPSU, and other high temp exotic filaments.
+I've been building and designing FDM 3D printers [since high school](https://www.youtube.com/watch?v=nWW_B8uRUUc), and I wanted to take on what I felt is the pinnacle of DIY 3D printers: a large-format 3D printer with a heated build chamber. A heated build chamber, in the context of a 3D printer, is basically an oven. A heated build area allows for warp-free printing of ABS and PC. Additionally, it also allows you to print PEEK, PEI, PPSU, and other high-temp exotic filaments. Building a robot that operates inside an oven is tricky, since most electronics will stop working around 80°C. Through clever engineering and trial and error, I was able to develop a system of flexible thermal barriers that kept the sensitive electronics and motion platform parts outside of the heated chamber. More [photos of the build can be found here](https://imgur.com/a/guFPFbn).
 
-Link to whole Imgur photo album of printer build (or look below): https://imgur.com/a/guFPFbn
+The final specs I ended up with were: 
+- Temperatures: 500°C Nozzle Max, 250°C Bed Max, 150°C Chamber Max
+- CoreXY motion system with 21.5x12x18in build volume, Ball screw for Z-axis
+- Heated bed, heated chamber, flexible thermal barriers
+- Hotend: E3D Titan Aqua, E3D Super Volcano, E3D .6mm Copper Plated Super Volcano Nozzle, PT100 Temp Sensor
+- Electronics: Duet WiFi, Nema 23s
+- Removable spring steel build plate held on by high-temp magnets (Samarium Cobalt - SmCo), PEI build surface
 
-Some addition video of my printer in action (video below as well): https://youtu.be/yPAY0QT0az8
+I used the following tools: 
+- Solidworks
+- Manual mill
+- Plasma CNC table
+- Angle grinder, bandsaw, drill press, and basic hand tools.
 
-Tools used to build the printer:
-Solidworks, manual mill, plasma CNC table, angle grinder, bandsaw, drill press, and basic hand tools.
-Specs: CoreXY with 21.5x12x18in build volume, heated bed, heated chamber, flexible thermal barriers, E3D Titan Aqua, E3D super volcano, E3D .6mm copper plated super volcano nozzle, PT100 temp sensor, Duet Wifi, Nema 23s, Ball screw for Z, removable spring steel build plate held on by high temp magnets (Samarium Cobalt -SmCo), PEI build surface. 500C Nozzle Max, 250c bed max, 150C Chamber max
+<iframe width="1728" height="794" src="https://www.youtube.com/embed/yPAY0QT0az8" title="Custom Big FDM 3D Printer video review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Link to a very early draft of my design document (link: https://docs.google.com/document/d/1QNHoIpd1QWBDZGYRaK_gxPx1XXUlXQM__-ho9reaCfc/edit?usp=sharing ) PLEASE NOTE THIS IS A DRAFT so excuse any grammar/ spelling errors.
 
-In addition I have made several design changes to the physical hardware, electrical design, and overall operation of the printer. My hope is that by sharing this early documentation that others can draw some inspiration from it on their own builds.
 
-Print quality has been hit or miss, I am still working on getting my cura profiles dialed in. Some prints have turned out gorgeous while others have had lots of stringing issues. I have also been working with PEEK filament which has not been the easiest to print. If anyone has tips on getting the super volcano dialed in I am all ears. Also an easter egg for those of you that read this far, the side panels for this printer are the side panels from a Stratasys SST 768 that I cut up with a bandsaw.​
-
-As always, if you have any questions please ask me!

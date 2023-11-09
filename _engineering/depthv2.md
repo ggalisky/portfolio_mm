@@ -6,14 +6,15 @@ layout: splash
 
 <h1 style="text-align: center;">Depth V2 - A Next Generation Audio Freediving Computer</h1>
 <h10 style="text-align: left;">March 2021 - Present  </h10>
+<br>
 
-[Freediving](https://en.wikipedia.org/wiki/Freediving) - the sport or activity of diving underwater without the use of breathing apparatus, especially in deep water.
+Important context: [Freediving](https://en.wikipedia.org/wiki/Freediving) - the sport or activity of diving underwater without the use of breathing apparatus, especially in deep water.
 
 ## What is Depthv2?
 Depth V2 is a head mounted audio freediving computer and music player designed for the underwater adventurer. Users can set configurable dive notifications, listen to their favorite music, and record their dives. It is the second iteration of the [Depth V1 dive computer](/engineering/depthv1)
 , and it is available for purchase here: [Depth V2](https://www.https://www.depthdiving.com)
 
-Depth was developed by myself and my Cofounder [Fran](https://www.linkedin.com/in/fransheska-colon/). I designed and built the casing, electronics, firmware, python test tools, pressure testing chamber, and assembly jigs. Fran developed the mobile app.
+Depth was developed by myself and my Co-Founder [Fran](https://www.linkedin.com/in/fransheska-colon/). I designed and built the casing, electronics, firmware, python test tools, pressure testing chamber, and assembly jigs. Fran developed the mobile app.
 
 Why do you need a freediving computer? 
 - Keep track of surface interval to prevent shallow water blackouts

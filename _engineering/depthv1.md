@@ -7,8 +7,8 @@ layout: splash
 <h1 style="text-align: center;">D3PTH - Design And Build of A Freediving Smart Watch</h1>
 <h2 style="text-align: center;">I Led a Team to Design And Build A Freediving Smart Watch That Won 2nd Place at MakeMIT 2021. We did it in 16 days, here is how:  </h2>
 <h10 style="text-align: left;">March 2021  </h10>
-
-[Freediving](https://en.wikipedia.org/wiki/Freediving) - the sport or activity of diving underwater without the use of breathing apparatus, especially in deep water.
+<br>
+Important context: [Freediving](https://en.wikipedia.org/wiki/Freediving) - the sport or activity of diving underwater without the use of breathing apparatus, especially in deep water.
 
 ## What is D3PTH?
 D3PTH is a freediving smart watch/computer that a friend and I built as part of [MakeMIT link](https://www.devpost.com/software/d3pth). We built D3PTH because we though it would be a fun and challenging embedded systems project within the constraints of the MakeMIT hackathon. The constraints were a 16 day build + demo window and a $500 budget. After being accepted into MakeMIT, we got to work on a plan.

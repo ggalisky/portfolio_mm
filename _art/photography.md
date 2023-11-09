@@ -31,7 +31,7 @@ yosemite_row:
   - image_path: /assets/art_images/yosemite/IMG_0023.jpg
     url: "/art/photography/yosemite"
     title: "Yosemite, California"
-    excerpt: "excerpt"
+    excerpt: ""
     btn_label: "Learn More"
     btn_class: "btn--inverse"
 
@@ -39,7 +39,7 @@ washington_row:
   - image_path: /assets/art_images/Washington/GOPR1499 copy.JPG
     url: "/art/photography/washington"
     title: "Olympic Peninsula, Washington"
-    excerpt: "excerpt"
+    excerpt: ""
     btn_label: "Learn More"
     btn_class: "btn--inverse"
 
@@ -47,7 +47,7 @@ hawaii_row:
   - image_path: /assets/art_images/Hawaii/A7S02940.JPG
     url: "/art/photography/hawaii"
     title: "Hawaii"
-    excerpt: "excerpt"
+    excerpt: ""
     btn_label: "Learn More"
     btn_class: "btn--inverse"
 ---
