@@ -11,8 +11,6 @@ photo_row:
     excerpt: 'Check out my underwater (and above) photography. Locations include Washington, California, Mexico, and more'
     btn_label: "Learn More"
     btn_class: "btn--inverse"
-
-synth_row:
   - image_path: /assets/images/synth.png
     url: "/art/synth"
     title: "Synth Loops"
@@ -24,6 +22,5 @@ synth_row:
 ---
 
 
-{% include feature_row id="photo_row" type="left" %}
+{% include feature_row id="photo_row" %}
 
-{% include feature_row id="synth_row" type="left" %}
