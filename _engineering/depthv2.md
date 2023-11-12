@@ -8,7 +8,7 @@ layout: splash
 <h10 style="text-align: left;">March 2021 - Present  </h10>
 <br>
 
-Important context: [Freediving](https://en.wikipedia.org/wiki/Freediving) - the sport or activity of diving underwater without the use of breathing apparatus, especially in deep water.
+[Freediving](https://en.wikipedia.org/wiki/Freediving) - the sport or activity of diving underwater without the use of breathing apparatus, especially in deep water.
 
 ## What is Depthv2?
 Depth V2 is a head mounted audio freediving computer and music player designed for the underwater adventurer. Users can set configurable dive notifications, listen to their favorite music, and record their dives. It is the second iteration of the [Depth V1 dive computer](/engineering/depthv1)

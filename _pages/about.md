@@ -3,11 +3,13 @@ permalink: /about/
 title: "About"
 ---
 
-I'm an engineer and nature adventurer. I am also a PFI certified freediver and can dive up to 41m (135ft) and back on a single breath.
+I'm an engineer and nature adventurer.
 
-My engineering interests are broad, and as a result of this I tend to select projects that include a mix mechanical, electrical and software engineering. In the last couple years I have been more focused on the intersection between hardware and software. I studied electrical engineering at [CSULB](https://www.csulb.edu) where I received my Bachelors of Science in Electrical Engineering.
+The intersection between hardware and software has become my focus over the last few years. 
 
 Professionally I've worked on hardware and software for satellites, dive computers, hardware in the loop testers, and industrial 3D printers. I currently work at [Zoox](https://zoox.com) on vehicle simulation platforms and at [Depth Dive Computers](https://www.depthdiving.com) designing and building the next generation of freediving computers.
+
+I studied electrical engineering at [CSULB](https://www.csulb.edu) where I received my Bachelors of Science in Electrical Engineering.
 
 You can get contact with me by sending an email to graysongalisky@gmail.com
 

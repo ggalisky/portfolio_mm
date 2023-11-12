@@ -7,6 +7,12 @@ permalink: /engineering/
 
 feature_row1:
 
+  - image_path: /assets/images/depth_meche_v2.png
+    url: "/engineering/depthv1"
+    title: "Depth Freediving Computer - V1"
+    excerpt: "I led a team to design and build A freediving smart watch that won 2nd place at MakeMIT 2021"
+    btn_label: "Learn More"
+    btn_class: "btn--inverse"
   - image_path: /assets/images/depthv2_head_mounted.JPG
     url: "/engineering/depthv2"
     title: "Depth Freediving Computer - V2"
@@ -19,24 +25,20 @@ feature_row1:
     excerpt: "I designed A 3D printed biomimetic robotic hand that received 1st place in the 2017 Stratasys Extreme Redesign Competition"
     btn_label: "Learn more"
     btn_class: "btn--inverse"
-  - image_path: /assets/images/inv_pend.png
-    url: "/engineering/inverted-pendulum"
-    title: "Inverted Pendulum With Reaction Wheel End Effector"
-    excerpt: "For my EE 471 Design of Control Systems Course my team and I built an inverted pendulum with a reaction wheel for the end effector"
-    btn_label: "Learn more"
-    btn_class: "btn--inverse"
+
 
 feature_row2:
-  - image_path: /assets/images/depth_meche_v2.png
-    url: "/engineering/depthv1"
-    title: "Depth Freediving Computer - V1"
-    excerpt: "I led a team to design and build A freediving smart watch that won 2nd place at MakeMIT 2021"
-    btn_label: "Learn More"
-    btn_class: "btn--inverse"
+
   - image_path: /assets/images/bfp_front.png
     url: "/engineering/hightemp3dp"
     title: "Industrial High Temperature 3D Printer"
     excerpt: "I designed, machined, and assembled a huge custom high temperature 3D printer"
+    btn_label: "Learn more"
+    btn_class: "btn--inverse"
+  - image_path: /assets/images/inv_pend.png
+    url: "/engineering/inverted-pendulum"
+    title: "Inverted Pendulum With Reaction Wheel End Effector"
+    excerpt: "For my EE 471 Design of Control Systems Course my team and I built an inverted pendulum with a reaction wheel for the end effector"
     btn_label: "Learn more"
     btn_class: "btn--inverse"
   - image_path: /assets/images/exoromp.jpg

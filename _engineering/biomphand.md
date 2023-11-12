@@ -14,6 +14,8 @@ layout: splash
 
 <iframe width="1728" height="794" src="https://www.youtube.com/embed/xkiIJHXI0ls" title="3D printed Biomimetic Robot Prosthetic Hand Project - Final" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+<br>
+
 I designed and built a biomimetic robotic prosthetic hand, crafted entirely through 3D printing technology. The hand is a sophisticated blend of 3D printed bones, ligaments, tendon sheaths, and supporting structures such as the palm and servo tower mounting pieces. One of the unique aspects of my design lies in the integration of both rigid and flexible materials, carefully balanced to mimic the complexity of the human hand. 
 
 Over the course of a year, I meticulously crafted 54 distinct STL files, comprising 20 bones, 14 tendon sheaths, 16 ligaments, 20 tendon guides, 1 palm, 2 servo mounting plates, 6 pulleys, and 1 carpal tunnel. Among these files, I personally designed 37, while the remaining 20 underwent substantial modifications from their original form, tailored to fit seamlessly into my project. For those interested in the initial files, you can find them [here](http://www.thingiverse.com/thing:15342).
