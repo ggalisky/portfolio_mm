@@ -3,7 +3,7 @@ permalink: /about/
 title: "About"
 ---
 
-I'm an engineer and nature adventurer.
+I'm an engineer and nature enjoyer. I particularly like freediving and rock climbing.
 
 The intersection between hardware and software has become my focus over the last few years. 
 
@@ -36,3 +36,5 @@ time to die" - Blade Runner
 "Out of the future that is not yet, into the present that is just becoming, back to the past that no longer is." - St. Augustine's definition of time in "Helmet For My Pillow" by Robert Leckie 
 
 "A society grows great when old men plant trees whose shade they know they shall never sit in" - Greek proverb
+
+"There is absolutely nothing you should be doing. You have no more purpose than the birds in the sky." - Unknown
