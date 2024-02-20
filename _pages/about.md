@@ -7,7 +7,7 @@ I'm an engineer and nature enjoyer. I particularly like freediving and rock clim
 
 The intersection between hardware and software has become my focus over the last few years. 
 
-Professionally I've worked on hardware and software for satellites, dive computers, hardware in the loop testers, and industrial 3D printers. I currently work at [Zoox](https://zoox.com) on vehicle simulation platforms and at [Depth Dive Computers](https://www.depthdiving.com) designing and building the next generation of freediving computers.
+Professionally I've worked on hardware and software for satellites, dive computers, hardware in the loop testers, and industrial 3D printers. I currently work at [Zoox](https://zoox.com) on vehicle simulation platforms.
 
 I studied electrical engineering at [CSULB](https://www.csulb.edu) where I received my Bachelors of Science in Electrical Engineering.
 
